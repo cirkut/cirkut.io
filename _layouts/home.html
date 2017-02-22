@@ -1,33 +1,39 @@
+<!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
-  <body>
+  <body class="home">
   
-    <header>
-      <div class="logo">
-        <a href="#">
-          <img src="http://cirkutmedia.com/images/logo-black.png" alt="Cirkut Media" />
-        </a>
-      </div>
-      <nav>
-        <a href="#">Home</a><!--
-        --><a href="#">Services</a><!--
-        --><a href="#">Work</a><!--
-        --><a href="#">Blog</a><!--
-        --><a href="#">Contact</a>
-      </nav>
-      <div id="particles-js" class="hero bordered white top">
-        <div class="content container">
-          <img src="http://cirkutmedia.com/images/logo-white.png" alt="" />
-          <h2>Cirkut Media is a marketing &amp; media agency that helps connect the dots between you and your customers.</h2>
+    {% include header.html %}
+    <div class="page">
+      <div class="hello bg-white bordered dark top bottom">
+        <div class="container pt25 pb25">
+          <p class="lead mb0 text-center">Whether you're looking to rebrand with a new logo or marketing materials, or if you need a fresh look for your website or social media presences, Cirkut Media can help connect the dots between you and your customers. <a href="/contact/" class="btn outline">Contact Us &rarr;</a></p>
         </div>
       </div>
-    </header>
-    <div class="page">
       <div class="services bg-medium bordered white top bottom">
         <div class="container pt50 pb50">
           <div class="col-1-3 service">
+            <a href="/services/#logos"><i class="large ion-ios-color-filter"></i>
+            <h2>Logos / Branding</h2></a>
+            <p>Engage your clients from the very start. We'll create an unmistakable and timeless brandmark or logo that's sure to last for decades.</p>
+            <a href="/services/#logos" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="col-1-3 service">
+            <a href="/services/#web"><i class="large ion-ios-monitor"></i>
+            <h2>Web Development</h2></a>
+            <p>Stand out from the crowd with a fresh and functional new website. You handle the content, we'll make sure it looks amazing.</p>
+            <a href="/services/#web" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="col-1-3 service">
+            <a href="/services/#design"><i class="large ion-ios-compose"></i>
+            <h2>Graphic Design</h2></a>
+            <p>Whether it's a flyer or poster, or a social media banner or post, we can create something that's sure to grab everyone's attention.</p>
+            <a href="/services/#design" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="clear"></div>
+          <!-- <div class="col-1-3 service">
             <i class="large ion-ios-color-filter"></i>
             <h2>Style</h2>
             <p>Stand out from the crowd where bad design and poor layouts run rampant. You handle the content, we'll make sure it looks amazing.</p>
@@ -41,34 +47,14 @@
             <i class="large ion-ios-locked"></i>
             <h2>Security</h2>
             <p>A hacked site causes headaches for everyone. We run daily scans on our servers and check for vulnerabilities to keep ahead of the hackers.</p>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="content bordered medium top bottom">
+      <!-- <div class="content bordered medium top bottom">
         <div class="container pt50 pb50">
-          <h1><a href="#">Something</a></h1>
-          <h2><a href="#">Something</a></h2>
-          <h3><a href="#">Something</a></h3>
-          <h4><a href="#">Something</a></h4>
-          <h5><a href="#">Something</a></h5>
-          <h6><a href="#">Something</a></h6>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Ullam, fugit id dolor molestias reprehenderit,</a> consectetur animi minus provident. Sit blanditiis, dolor omnis officiis itaque ut. Nihil ut doloremque hic ad.</p>
-          <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dignissimos asperiores. Fugiat reiciendis repellendus mollitia natus dicta maiores itaque inventore nostrum ipsum repellat corporis blanditiis aspernatur enim quisquam magnam, nihil?</p>
-          <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dignissimos asperiores. Fugiat reiciendis repellendus mollitia natus dicta maiores itaque inventore nostrum ipsum repellat corporis blanditiis aspernatur enim quisquam magnam, nihil?</p>
-          <pre class="bg-medium bordered white x-small thin">&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Title&lt;/title&gt;
-    &lt;/head&gt;
-&lt;/html&gt;</pre>
-          <div class="col-1-3">
-            <div class="gradient-wrap"><img src="" alt="" /></div>
-          </div>
-          <div class="col-1-3">
-            <div class="gradient-wrap"><img src="" alt="" /></div>
-          </div>
+          {{ content }}
         </div>
-          
-      </div>
+      </div> -->
     </div>
     {% include footer.html %}
   </body>

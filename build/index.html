@@ -1,45 +1,86 @@
+<!DOCTYPE html>
 <html>
 
   <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Cirkut Media</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-  <link rel="canonical" href="http://cirkutmedia.com/">
-  <link rel="alternate" type="application/rss+xml" title="Cirkut Media" href="http://cirkutmedia.com/feed.xml">
-  <link rel="stylesheet" href="/css/main.css">
+	<title>Cirkut Media</title>
+	<meta name="description" content="Cirkut Media is a marketing and media agency that helps connect the dots between you and your customers.">
+	<link rel="shortcut icon" href="/images/logo-gray.png">
+	<link rel="apple-touch-icon-precomposed" href="/images/logo-gray-matte.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/logo-gray-matte.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/logo-gray-matte.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/logo-gray-matte.png">
+	<link rel="canonical" href="http://localhost:4000/">
+	<link rel="alternate" type="application/rss+xml" title="Cirkut Media" href="http://localhost:4000/feed.xml">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/css/fluidbox.min.css">
 </head>
 
 
-  <body>
+  <body class="home">
   
     <header>
-      <div class="logo">
-        <a href="#">
-          <img src="http://cirkutmedia.com/images/logo-black.png" alt="Cirkut Media" />
-        </a>
-      </div>
-      <nav>
-        <a href="#">Home</a><!--
-        --><a href="#">Services</a><!--
-        --><a href="#">Work</a><!--
-        --><a href="#">Blog</a><!--
-        --><a href="#">Contact</a>
-      </nav>
-      <div id="particles-js" class="hero bordered white top">
-        <div class="content container">
-          <img src="http://cirkutmedia.com/images/logo-white.png" alt="" />
-          <h2>Cirkut Media is a marketing &amp; media agency that helps connect the dots between you and your customers.</h2>
+  <div class="logo">
+    <a href="/">
+      <img src="http://cirkutmedia.com/images/logo-black.png" alt="Cirkut Media" />
+    </a>
+  </div>
+  <nav>
+    <a href="/" class="desktop-menu-item">Home</a><!--
+    --><a href="/services/" class="desktop-menu-item">Services</a><!--
+    --><a href="/work/" class="desktop-menu-item">Work</a><!--
+    --><!-- <a href="/blog/" class="desktop-menu-item">Blog</a> --><!--
+    --><a href="/contact/" class="desktop-menu-item">Contact</a><!--
+    --><a href="#" class="mobile-menu-trigger">Menu</a>
+  </nav>
+  <div class="overlay">
+    <div class="mobile-menu-close"><span>&times;</span></div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/work/">Work</a></li>
+      <!-- <li><a href="#">Blog</a></li> -->
+      <li><a href="/contact/">Contact</a></li>
+    </nav>
+  </div>
+  <div id="hero-particle" class="hero bordered white top">
+    <div class="content container">
+      <img src="http://cirkutmedia.com/images/logo-white.png" class="hero-logo" alt="" />
+      <h2>Cirkut Media is a marketing &amp; media agency that helps connect the dots between you and your customers.</h2>
+    </div>
+  </div>
+</header>
+    <div class="page">
+      <div class="hello bg-white bordered dark top bottom">
+        <div class="container pt25 pb25">
+          <p class="lead mb0 text-center">Whether you're looking to rebrand with a new logo or marketing materials, or if you need a fresh look for your website or social media presences, Cirkut Media can help connect the dots between you and your customers. <a href="/contact/" class="btn outline">Contact Us &rarr;</a></p>
         </div>
       </div>
-    </header>
-    <div class="page">
       <div class="services bg-medium bordered white top bottom">
         <div class="container pt50 pb50">
           <div class="col-1-3 service">
+            <a href="/services/#logos"><i class="large ion-ios-color-filter"></i>
+            <h2>Logos / Branding</h2></a>
+            <p>Engage your clients from the very start. We'll create an unmistakable and timeless brandmark or logo that's sure to last for decades.</p>
+            <a href="/services/#logos" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="col-1-3 service">
+            <a href="/services/#web"><i class="large ion-ios-monitor"></i>
+            <h2>Web Development</h2></a>
+            <p>Stand out from the crowd with a fresh and functional new website. You handle the content, we'll make sure it looks amazing.</p>
+            <a href="/services/#web" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="col-1-3 service">
+            <a href="/services/#design"><i class="large ion-ios-compose"></i>
+            <h2>Graphic Design</h2></a>
+            <p>Whether it's a flyer or poster, or a social media banner or post, we can create something that's sure to grab everyone's attention.</p>
+            <a href="/services/#design" class="btn outline white">Learn More &rarr;</a>
+          </div>
+          <div class="clear"></div>
+          <!-- <div class="col-1-3 service">
             <i class="large ion-ios-color-filter"></i>
             <h2>Style</h2>
             <p>Stand out from the crowd where bad design and poor layouts run rampant. You handle the content, we'll make sure it looks amazing.</p>
@@ -53,40 +94,30 @@
             <i class="large ion-ios-locked"></i>
             <h2>Security</h2>
             <p>A hacked site causes headaches for everyone. We run daily scans on our servers and check for vulnerabilities to keep ahead of the hackers.</p>
-          </div>
+          </div> -->
         </div>
       </div>
-      <div class="content bordered medium top bottom">
+      <!-- <div class="content bordered medium top bottom">
         <div class="container pt50 pb50">
-          <h1><a href="#">Something</a></h1>
-          <h2><a href="#">Something</a></h2>
-          <h3><a href="#">Something</a></h3>
-          <h4><a href="#">Something</a></h4>
-          <h5><a href="#">Something</a></h5>
-          <h6><a href="#">Something</a></h6>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Ullam, fugit id dolor molestias reprehenderit,</a> consectetur animi minus provident. Sit blanditiis, dolor omnis officiis itaque ut. Nihil ut doloremque hic ad.</p>
-          <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dignissimos asperiores. Fugiat reiciendis repellendus mollitia natus dicta maiores itaque inventore nostrum ipsum repellat corporis blanditiis aspernatur enim quisquam magnam, nihil?</p>
-          <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dignissimos asperiores. Fugiat reiciendis repellendus mollitia natus dicta maiores itaque inventore nostrum ipsum repellat corporis blanditiis aspernatur enim quisquam magnam, nihil?</p>
-          <pre class="bg-medium bordered white x-small thin">&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Title&lt;/title&gt;
-    &lt;/head&gt;
-&lt;/html&gt;</pre>
-          <div class="col-1-3">
-            <div class="gradient-wrap"><img src="" alt="" /></div>
-          </div>
-          <div class="col-1-3">
-            <div class="gradient-wrap"><img src="" alt="" /></div>
-          </div>
+          <ul class="post-list">
+  
+    <li>
+      <span class="post-meta">Aug 5, 2016</span>
+
+      <h2>
+        <a class="post-link" href="/2016/08/05/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+      </h2>
+    </li>
+  
+</ul>
         </div>
-          
-      </div>
+      </div> -->
     </div>
     <footer class="site-footer bordered light bottom">
-      <div class="container">
-        &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Cirkut Media. Made with <i class="ion-heart"></i> in Michigan.
-      </div>
-    </footer>
+  <div class="container">
+    &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Cirkut Media, LLC.<br>Made with <i class="ion-heart"></i> in Michigan.
+  </div>
+</footer>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -99,9 +130,26 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
 <script>
+$(function () {
+    $('.gallery a').fluidbox();
+});
+$(document).ready(function() {
+  $('.mobile-menu-trigger').on('click', function() {
+    $('body').addClass('open');
+    $('.overlay').addClass('open');
+    return false;
+  });
+ 
+  $('.mobile-menu-close').on('click', function() {
+    $('body').removeClass('open');
+    $('.overlay').removeClass('open');
+    return false;
+  });
+});
 /* ---- particles.js config ---- */
-particlesJS("particles-js", {
+var particleConfig = {
   "particles": {
     "number": {
       "value": 160,
@@ -205,17 +253,13 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
-});
-
-
-/* ---- stats.js config ---- */
-
+};
 var count_particles, stats, update;
 count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  requestAnimationFrame(update);
-};
+update = function() { requestAnimationFrame(update); };
 requestAnimationFrame(update);
+
+particlesJS("hero-particle", particleConfig);
 </script>
 
   </body>

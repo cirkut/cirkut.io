@@ -1,15 +1,13 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+<div class="page">
+  <div class="bordered bg-medium top bottom">
+    <div class="post-meta container pt15 pb15 text-center">{% if page.author %} Posted by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><strong><span itemprop="name">{{ page.author }}</span></strong></span> on {% endif %}<strong><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></strong></div>
   </div>
-
-</article>
+  <div class="content post-content bordered medium top bottom">
+    <div class="container pt50 pb50">
+      {{ content }}
+    </div>
+  </div>
+</div>

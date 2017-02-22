@@ -1,8 +1,8 @@
 <footer class="site-footer bordered light bottom">
-      <div class="container">
-        &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Cirkut Media. Made with <i class="ion-heart"></i> in Michigan.
-      </div>
-    </footer>
+  <div class="container">
+    &copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Cirkut Media, LLC.<br>Made with <i class="ion-heart"></i> in Michigan.
+  </div>
+</footer>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,9 +15,26 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.4/js/jquery.fluidbox.min.js"></script>
 <script>
+$(function () {
+    $('.gallery a').fluidbox();
+});
+$(document).ready(function() {
+  $('.mobile-menu-trigger').on('click', function() {
+    $('body').addClass('open');
+    $('.overlay').addClass('open');
+    return false;
+  });
+ 
+  $('.mobile-menu-close').on('click', function() {
+    $('body').removeClass('open');
+    $('.overlay').removeClass('open');
+    return false;
+  });
+});
 /* ---- particles.js config ---- */
-particlesJS("particles-js", {
+var particleConfig = {
   "particles": {
     "number": {
       "value": 160,
@@ -121,15 +138,11 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
-});
-
-
-/* ---- stats.js config ---- */
-
+};
 var count_particles, stats, update;
 count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  requestAnimationFrame(update);
-};
+update = function() { requestAnimationFrame(update); };
 requestAnimationFrame(update);
+
+particlesJS("hero-particle", particleConfig);
 </script>
