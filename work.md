@@ -15,7 +15,7 @@ permalink: /work/
 		<div class="col-1-3 item"><a href="/images/work/logo-magankonoski.png"><img src="/images/work/logo-magankonoski.png" alt="Magan Konoski"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-runwayavenue.png"><img src="/images/work/logo-runwayavenue.png" title="Runway Avenue" alt="Runway Avenue"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-adamallen.png"><img src="/images/work/logo-adamallen.png" alt="Adam Allen"></a></div>
-		<div class="col-1-3 item"><a href="/images/work/logo-kronicsauce.png"><img src="/images/work/logo-Kronicsauce.png" alt="Kronicsauce"></a></div>
+		<div class="col-1-3 item"><a href="/images/work/logo-kronicsauce.png"><img src="/images/work/logo-kronicsauce.png" alt="Kronicsauce"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-autoshow50.png"><img src="/images/work/logo-autoshow50.png" alt="NUIAS 50th Anniversary"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-elementofnutrition.png"><img src="/images/work/logo-elementofnutrition.png" alt="Element of Nutrition"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-flyonthewall.png"><img src="/images/work/logo-flyonthewall.png" alt="Fly On The Wall Photography"></a></div>
