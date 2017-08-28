@@ -11,7 +11,7 @@ destination: build
 title: Cirkut Media
 email: josh@cirkut.net
 description: Cirkut Media is a marketing and media agency that helps connect the dots between you and your customers.
-baseurl: "https://cirkut.io"
+baseurl: ""
 url: "https://cirkut.io"
 timezone: America/Detroit
 

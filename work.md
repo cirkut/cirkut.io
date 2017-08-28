@@ -10,7 +10,6 @@ permalink: /work/
 </div>
 <div class="bordered dark top bottom">
 	<div class="gallery pt20 pb0 container">
-		<div class="col-1-3 item"><a href="/images/work/logo-glenabbey.png"><img src="/images/work/logo-glenabbey.png" alt="Glen Abbey"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-marlanholdings.png"><img src="/images/work/logo-marlanholdings.png" alt="Marlan Holdings"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-magankonoski.png"><img src="/images/work/logo-magankonoski.png" alt="Magan Konoski"></a></div>
 		<div class="col-1-3 item"><a href="/images/work/logo-runwayavenue.png"><img src="/images/work/logo-runwayavenue.png" title="Runway Avenue" alt="Runway Avenue"></a></div>
