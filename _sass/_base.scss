@@ -566,6 +566,7 @@ pre {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
+  white-space: nowrap;
   &:hover {
     background: lighten($dark, 15%);
     border-color: lighten($dark, 15%);

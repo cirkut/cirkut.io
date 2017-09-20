@@ -498,7 +498,8 @@ pre {
   padding: 6px 10px;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  white-space: nowrap; }
   .btn:hover {
     background: #4c5059;
     border-color: #4c5059; }
